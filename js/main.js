@@ -3,6 +3,10 @@ let btn2 = document.querySelector("#button-no");
 let signIn = document.querySelector(".sign-in");
 let buttons = document.querySelector(".question-buttons");
 let text = document.querySelector(".h1-text");
+let closeWindow = document.querySelector(".close-window");
+let container = document.querySelector(".index-container-header");
+
+
 
 btn1.onclick = () => {
     console.log("da");
@@ -14,4 +18,7 @@ btn1.onclick = () => {
 btn2.onclick = () => {
     console.log("nu");
     text.innerText="Te doare la pula";
+}
+closeWindow.onclick=()=>{
+    container.style.display="none";
 }
