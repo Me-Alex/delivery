@@ -11,6 +11,10 @@ h1 {
 p {
     font-size: 2vw;
 }
+a{
+    color:-webkit-link;
+    cursor:pointer;
+}
 
 .index-container {
     width: 100%;
@@ -21,12 +25,12 @@ p {
 
 }
 
-.index-container-header{
+.index-container-header {
     width: 80%;
     height: auto;
-    display:flex;
-    flex-direction:column;
-    gap:2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
     justify-content: center;
     align-items: center;
 
@@ -47,18 +51,18 @@ p {
     color: red;
     border: none;
     min-width: 30px;
-    max-width:;
+    max-width: ;
     width: auto;
     border-radius: 20px;
     padding: 10px;
-    text-align:center;
+    text-align: center;
 }
 
 #button-no {
     color: green;
     border: none;
     min-width: 30px;
-    max-width:;
+    max-width: ;
     width: auto;
     border-radius: 20px;
     padding: 10px;
@@ -78,30 +82,48 @@ p {
 }
 
 .sign-in {
-    display:none ;
-    width:0 auto;
+    display: none;
+    width: 0 auto;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+.log-in {
+    display: none;
+    width: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     border: none;
 }
 
 input {
-    padding:4px;
-    outline:none;
-    border:none;
-    height:30px;
-    border-radius:10px;
+    padding: 4px;
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
 }
-input:focus{
-    background-color:orange;
-    color:white;
-    
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: inner-spin-button !important;
+ display:none;
 }
-input:focus::placeholder{
-    color:white;
+
+input:focus {
+    background-color: orange;
+    color: white;
+
 }
+
+input:focus::placeholder {
+    color: white;
+}
+
 ::-webkit-scrollbar {
     background-color: white;
     width: 5px;
@@ -114,30 +136,34 @@ input:focus::placeholder{
 ::-webkit-scrollbar-track {
     background-color: black;
 }
-.close-window{
-    width:20px;
-    height:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
+.close-window {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top:8vh;
-    right:8vw;
+    top: 8vh;
+    right: 8vw;
 }
-.close-window:hover *{
-    background-color:red;
+
+.close-window:hover * {
+    background-color: red;
 }
-.line1{
-    width:15px;
-    height:2px;
-    background-color:black;
-    transform:rotate(50deg);
+
+.line1 {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(50deg);
     position: absolute;
 }
-.line2{
-    width:15px;
-    height:2px;
-    background-color:black;
-    transform:rotate(-50deg);
-    position:absolute;
+
+.line2 {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(-50deg);
+    position: absolute;
 }
