@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/restaurants.css">
     <title>Restaurants</title>
@@ -75,7 +76,7 @@
         <br>
         <h1>Restaurant list</h1>
         <div class="row type-of-food">
-            <p>all</a>
+            <p class="type-of-food-clicked">all</a>
             <p>Greceasca</p>
             <p>Asiatica</p>
             <p>Shaorma</p>
@@ -89,8 +90,37 @@
         <br>
         <div class="row restaurants-filter" style="height:100%">
             <div class="column restaurant-state">
-                <h3>Open now</h1>
-                    <h3>Free delivery</h1>
+                <div class="box">
+                    <div class="row">
+                        <h3><span style="color:red;"> 3</span> restaurants found</h3>
+                    </div>
+                    <div class="row">
+                        <h3>Open now
+                        </h3>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <h3>Free delivery</h3>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <h3>Restaurant raitings</h3>
+                        <div class="rating">
+                            <span value="1" class="fa fa-star"></span>
+                            <span value="2" class="fa fa-star"></span>
+                            <span value="3" class="fa fa-star"></span>
+                            <span value="4" class="fa fa-star"></span>
+                            <span value="5" class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="column restaurant-list">
                 <div class="row search-restaurant">
@@ -193,5 +223,6 @@
     <h3>tedoarelapula@voiniceii.com</h3>
 </footer>
 <script src="js/main.js"></script>
-
+<script src="js/rating.js"></script>
+<script src="js/type-of-food.js"></script>
 </html>
