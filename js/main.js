@@ -49,6 +49,7 @@ menu.onclick = () => {
     for (let i = 0; i < childs.length; i++) {
         childs[i].classList.toggle("menu-line" + (i + 1));
     }
+
     container.classList.toggle("index-container-header-normal");
 }
 let menu1 = document.querySelector(".menu-new");

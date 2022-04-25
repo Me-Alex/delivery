@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/restaurants.css">
+    <title>Restaurants</title>
+</head>
+
+<body>
+    <div class="index-container-header-none ">
+        <div class="row" style="width:100%">
+            <div class="column" style="width:50%">
+                <div class="index-container-header-content">
+
+                    <h1 class="h1-text">Ready for your first order?</h1>
+                    <!-- <p>Complete all your credentials and begin ordering</p> -->
+                </div>
+                <div class="question-buttons">
+                    <button id="button-yes">yes</button>
+                    <button id="button-no">no</button>
+                </div>
+                <form class="sign-in">
+                    <input type="text" required placeholder="Enter your first name">
+                    <input type="text" required placeholder="Enter your last name">
+                    <input type="email" required placeholder="Enter your email">
+                    <input type="number" required placeholder="Enter your cnp">
+                    <input type="submit">
+                    <a class="user-has-an-account">already have an account</a>
+                    <div class="google-signin">
+                        <script src="https://accounts.google.com/gsi/client" async defer></script>
+                        <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                            data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
+                        </div>
+                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+                            data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                        </div>
+                    </div>
+                </form>
+                <form class="log-in">
+                    <input type="email" required placeholder="Enter your email">
+                    <input type="password" required placeholder="Enter your password">
+                    <input type="submit">
+                    <div class="google-signin">
+                        <script src="https://accounts.google.com/gsi/client" async defer></script>
+                        <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                            data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
+                        </div>
+                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+                            data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="column menu-">
+                <div class="menu-box-text">
+                    <img src="./img/profileCat.png"
+                        style="width:90px ;height:70px; border-radius:1000%;text-align: center !important;" alt="">
+                    <a href="account.html">Account</a>
+                    <a>Settings</a>
+                    <a>Help</a>
+                    <a>Become a partner</a>
+                    <a>Forum</a>
+
+                    <a>Log-out</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="restaurants-header">
+        <br>
+        <h1>Restaurant list</h1>
+        <div class="row type-of-food">
+            <p>all</a>
+            <p>Greceasca</p>
+            <p>Asiatica</p>
+            <p>Shaorma</p>
+            <p>Romaneasca</p>
+            <p>Vegetarian</p>
+            <p>Vegetarian</p>
+            <p>Vegetarian</p>
+
+        </div>
+        <br>
+        <br>
+        <div class="row restaurants-filter" style="height:100%">
+            <div class="column restaurant-state">
+                <h3>Open now</h1>
+                    <h3>Free delivery</h1>
+            </div>
+            <div class="column restaurant-list">
+                <div class="row search-restaurant">
+                    <input type="search" placeholder="seach restaurant">
+                    <label for="sort-restaurants">Sort by</label>
+                    <select name="sort-restaurants" id="">
+                        <option value="1">Best match</option>
+                        <option value="1">Reviews</option>
+                        <option value="1">Price</option>
+                        <option value="1">Delivery distance</option>
+
+                    </select>
+                </div>
+                <div class="row restaurant-result">
+                    <img src="img/restaurantPresentationImg.png" alt="">
+                    <div class="column actual-restaurant">
+                        <h3>Restaurant name test</h1>
+                            <div class="row restaurant-style">
+                                <p>Italian</p>
+                                <p>American</p>
+                                <p>Romanesc</p>
+                            </div>
+                            <div class="row restaurant-stats">
+                                <p>4,6(11)</p>
+                                <p>20-40 min</p>
+                                <p>free</p>
+                                <p>min. 30 lei</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row restaurant-result">
+                    <img src="img/restaurantPresentationImg.png" alt="">
+                    <div class="column actual-restaurant">
+                        <h3>Restaurant name test</h1>
+                            <div class="row restaurant-style">
+                                <p>Italian</p>
+                                <p>American</p>
+                                <p>Romanesc</p>
+                            </div>
+                            <div class="row restaurant-stats">
+                                <p>4,6(22)</p>
+                                <p>20-40 min</p>
+                                <p>free</p>
+                                <p>min. 30 lei</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row restaurant-result">
+                    <img src="img/restaurantPresentationImg.png" alt="">
+                    <div class="column actual-restaurant">
+                        <h3>Restaurant name test</h1>
+                            <div class="row restaurant-style">
+                                <p>Italian</p>
+                                <p>American</p>
+                                <p>Romanesc</p>
+                            </div>
+                            <div class="row restaurant-stats">
+                                <p>4,6</p>
+                                <p>20-40 min</p>
+                                <p>free</p>
+                                <p>min. 30 lei</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column account-menu">
+            </div>
+        </div>
+    </div>
+    <div class="index-container">
+        <div class="navigation-bar">
+            <div class="logo">
+                <a href="index.html">voiniceii</a>
+            </div>
+            <div class="navigation-list">
+                <!-- <a class="log-in-show">Log-in
+
+                </a>
+                <a class="sign-up" href="">Sign-up
+
+                </a> -->
+                <div class="menu-lines">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+<footer>
+    <h1>
+        Welcome to footer>
+
+    </h1>
+    <h2>Contact us at : </h2>
+    <h3>tedoarelapula@voiniceii.com</h3>
+</footer>
+<script src="js/main.js"></script>
+
+</html>

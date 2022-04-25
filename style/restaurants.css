@@ -1,0 +1,59 @@
+.restaurants-header{
+    position:absolute;
+    top:20%;
+    width:100%;
+    height: 100vh;
+    background-color:yellow;
+}
+.row.type-of-food{
+    gap:10px;
+    cursor:pointer;
+    font-size:1.4vw;
+    font-family: didactGothicRegular;
+}
+.row.restaurants-filter{
+    align-items:flex-start;
+    gap:20px;
+    padding-top:20px;
+}
+.column.restaurant-list{
+    width:70%;
+    gap:20px;
+    align-items:flex-start;
+}
+.column.restaurant-state{
+    width:30%;
+    border-right:2px solid black;
+    height:100%;
+    justify-content:flex-start;
+}
+.actual-restaurant h3{
+    font-size:2vw;
+    font-family:didactGothicRegular;
+}
+.column.actual-restaurant{
+    padding:20px;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:15px;
+    width:100%;
+}
+.restaurant-result{
+    cursor:pointer;
+    padding-bottom:10px;
+    border-bottom:1px solid black;
+    width:80%;
+}
+.restaurant-result img{
+    width:200px;
+    height:150px;
+    border-radius:20px;
+}
+.row.restaurant-style{
+    gap:5px;
+    cursor:default;
+}
+.restaurant-stats{
+    gap:5px;
+    cursor:default;
+}

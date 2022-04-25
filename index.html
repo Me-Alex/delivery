@@ -20,28 +20,63 @@
 
             </div>
         </div> -->
-        <div class="index-container-header-content">
-            <h1 class="h1-text">Ready for your first order?</h1>
-            <!-- <p>Complete all your credentials and begin ordering</p> -->
-        </div>
-        <div class="question-buttons">
-            <button id="button-yes">yes</button>
-            <button id="button-no">no</button>
-        </div>
-        <form class="sign-in">
-            <input type="text" required placeholder="Enter your first name">
-            <input type="text" required placeholder="Enter your last name">
-            <input type="email" required placeholder="Enter your email">
-            <input type="number" required placeholder="Enter your cnp">
-            <input type="submit">
-            <a class="user-has-an-account">already have an account</a>
+        <div class="row" style="width:100%">
+            <div class="column" style="width:50%">
+                <div class="index-container-header-content">
 
-        </form>
-        <form class="log-in">
-            <input type="email" required placeholder="Enter your email">
-            <input type="password" required placeholder="Enter your password">
-            <input type="submit">
-        </form>
+                    <h1 class="h1-text">Ready for your first order?</h1>
+                    <!-- <p>Complete all your credentials and begin ordering</p> -->
+                </div>
+                <div class="question-buttons">
+                    <button id="button-yes">yes</button>
+                    <button id="button-no">no</button>
+                </div>
+                <form class="sign-in">
+                    <input type="text" required placeholder="Enter your first name">
+                    <input type="text" required placeholder="Enter your last name">
+                    <input type="email" required placeholder="Enter your email">
+                    <input type="number" required placeholder="Enter your cnp">
+                    <input type="submit">
+                    <a class="user-has-an-account">already have an account</a>
+                    <div class="google-signin">
+                        <script src="https://accounts.google.com/gsi/client" async defer></script>
+                        <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                            data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
+                        </div>
+                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+                            data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                        </div>
+                    </div>
+                </form>
+                <form class="log-in">
+                    <input type="email" required placeholder="Enter your email">
+                    <input type="password" required placeholder="Enter your password">
+                    <input type="submit">
+                    <div class="google-signin">
+                        <script src="https://accounts.google.com/gsi/client" async defer></script>
+                        <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                            data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
+                        </div>
+                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+                            data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="column menu-">
+                <div class="menu-box-text">
+                    <img src="./img/profileCat.png"
+                        style="width:90px ;height:70px; border-radius:1000%;text-align: center !important;" alt="">
+                    <a href="account.html">Account</a>
+                    <a>Settings</a>
+                    <a>Help</a>
+                    <a>Become a partner</a>
+                    <a>Log-out</a>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <div class="index-container">
         <div class="navigation-bar">
@@ -49,12 +84,12 @@
                 <a href="">voiniceii</a>
             </div>
             <div class="navigation-list">
-                <a class="log-in-show">Log-in
+                <!-- <a class="log-in-show">Log-in
 
                 </a>
                 <a class="sign-up" href="">Sign-up
 
-                </a>
+                </a> -->
                 <div class="menu-lines">
                     <div class="menu-line"></div>
                     <div class="menu-line"></div>
@@ -64,7 +99,9 @@
         </div>
 
         <div>
-            <button class="order-now-button">order now</button>
+            <h1>We order , you deliver</h1>
+            <br>
+            <button class="order-now-button"> <a style="text-decoration:none;" href="restaurants.html">order now</a> </button>
         </div>
     </div>
     <div class="index-content">
@@ -79,8 +116,8 @@
                     <div class="number">1</div>
                     <div class="column index-content-text">
 
-                        <h3>text fadf</h3>
-                        <p>fdskfj askdfj sadkfjsa fasklf j</p>
+                        <h3>Fast delivery</h3>
+                        <p>We will fly to you if necessary</p>
                     </div>
                 </div>
             </div>
@@ -89,8 +126,8 @@
                     <div class="number">2</div>
                     <div class="column index-content-text">
 
-                        <h3>text fadf</h3>
-                        <p>fdskfj askdfj sadkfjsa fasklf j</p>
+                        <h3>Your order will have higher priority</h3>
+                        <p>The chef will dorp everythig he was doing for your order</p>
                     </div>
                 </div>
             </div>
@@ -99,8 +136,8 @@
                     <div class="number">3</div>
                     <div class="column index-content-text">
 
-                        <h3>text fadf</h3>
-                        <p>fdskfj askdfj sadkfjsa fasklf j</p>
+                        <h3>Fast cooking times at restaurant</h3>
+                        <p>It doesn't matter if the food is left uncooked , it will be damn fast</p>
                     </div>
                 </div>
             </div>
