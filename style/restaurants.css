@@ -2,7 +2,6 @@
     position: absolute;
     top: 20%;
     width: 100%;
-    height: 100vh;
     background-color: yellow;
 }
 
@@ -14,9 +13,10 @@
 }
 
 .row.restaurants-filter {
+    padding-top:50px;
+    padding-bottom:50px;
     align-items: flex-start;
     gap: 20px;
-    padding-top: 20px;
 }
 
 .column.restaurant-list {

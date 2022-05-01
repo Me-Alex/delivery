@@ -25,20 +25,26 @@
                 <div class="index-container-header-content">
 
                     <h1 class="h1-text">Ready for your first order?</h1>
+                    <!-- <button class="btn-logout ">Log Out</button> -->
                     <!-- <p>Complete all your credentials and begin ordering</p> -->
                 </div>
                 <div class="question-buttons">
                     <button id="button-yes">yes</button>
                     <button id="button-no">no</button>
                 </div>
-                <form class="sign-in">
-                    <input type="text" required placeholder="Enter your first name">
-                    <input type="text" required placeholder="Enter your last name">
-                    <input type="email" required placeholder="Enter your email">
-                    <input type="number" required placeholder="Enter your cnp">
-                    <input type="submit">
+                <form class="sign-in" method="post" >
+                    <input type="text" name="FirstName" disabled="disabled" id="firstName" placeholder="First" required
+                        placeholder="Enter your first name">
+                    <input type="text" name="LastName" disabled="disabled" required placeholder="Enter your last name">
+                    <input type="email" name="email" required placeholder="Enter your email">
+                    <input type="number" name="cnp" disabled="disabled" required placeholder="Enter your cnp">
+                    <input type="password" name="pass" required placeholder="Enter your password" value="">
+                   <p class="error-password-need-to-be-bigger" style="display:none">password needs to be bigger than 6 characters</p>
+                    <input type="password" name="reppass" required placeholder="Enter your password" value="">
+                    <p class="error-password"></p>
+                    <input type="submit" name="submit">
                     <a class="user-has-an-account">already have an account</a>
-                    <div class="google-signin">
+                    <!-- <div class="google-signin">
                         <script src="https://accounts.google.com/gsi/client" async defer></script>
                         <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
                             data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
@@ -46,13 +52,13 @@
                         <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
                             data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
                         </div>
-                    </div>
+                    </div> -->
                 </form>
-                <form class="log-in">
-                    <input type="email" required placeholder="Enter your email">
-                    <input type="password" required placeholder="Enter your password">
-                    <input type="submit">
-                    <div class="google-signin">
+                <form class="log-in" method="post">
+                    <input type="email" name="email" required placeholder="Enter your email" value="">
+                    <input type="password" name="pass" required placeholder="Enter your password" value="">
+                    <input type="submit" name="submit">
+                    <!-- <div class="google-signin">
                         <script src="https://accounts.google.com/gsi/client" async defer></script>
                         <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
                             data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
@@ -60,7 +66,7 @@
                         <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
                             data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </div>
             <div class="column menu-">
@@ -73,7 +79,7 @@
                     <a>Settings</a>
                     <a>Help</a>
                     <a>Become a partner</a>
-                    <a>Log-out</a>
+                    <button class="btn-logout">Log-out</button>
                 </div>
             </div>
         </div>
@@ -101,7 +107,7 @@
         </div>
 
         <div>
-            <h1>We order , you deliver</h1>
+            <h1 class="index-header-h1">We order , you deliver</h1>
             <br>
             <button class="order-now-button"> <a style="text-decoration:none;" href="restaurants.html">order now</a>
             </button>
@@ -155,6 +161,8 @@
     <h2>Contact us at : </h2>
     <h3>tedoarelapula@voiniceii.com</h3>
 </footer>
+
 <script src="js/main.js"></script>
+<script type="module" src="js/firebase.js"></script>
 
 </html>

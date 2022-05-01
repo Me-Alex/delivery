@@ -17,7 +17,11 @@ for (let i = 0; i < typeOfFood.children.length; i++) {
 
 //what happends if you click on a restaurant listed on the page
 let restaurant = document.querySelectorAll(".restaurant-result");
-for (let i = 0; i < restaurant.length;i++)
+for (let i = 0; i < restaurant.length; i++)
     restaurant[i].onclick = () => {
+        let restaurantName = restaurant[i].querySelector(".actual-restaurant").children[0].innerHTML;//get the innerHTML text from the element from restaurants.html
+        localStorage.setItem("restaurantName", restaurantName);
         window.location.href = "detalied-info-restaurant.html";
+        console.log(restaurantName);
     }
+

@@ -23,7 +23,11 @@ html, body {
 
 
 
-
+.index-header-h1{
+    background-color:white;
+    padding:5px;
+    border-radius:6px;
+}
 
 a {
     color: -webkit-link;
@@ -160,6 +164,9 @@ input {
 
 input::placeholder {
     color: brown;
+}
+input:disabled{
+    background-color:#dddd
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -448,9 +455,19 @@ footer h2 {}
     border-radius: 20px;
     transition: all 1s;
 }
+.order-now-button a{
+color:black;
+}
 
 .order-now-button:hover {
     color: yellow;
     background-color: black;
     transition: all 1s;
+}
+.btn-logout{
+    width:150px;
+    height:40px;
+    background-color:blue;
+    color:white;
+    margin-top:20px;
 }

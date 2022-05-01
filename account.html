@@ -23,36 +23,23 @@
                     <button id="button-yes">yes</button>
                     <button id="button-no">no</button>
                 </div>
-                <form class="sign-in">
-                    <input type="text" required placeholder="Enter your first name">
-                    <input type="text" required placeholder="Enter your last name">
-                    <input type="email" required placeholder="Enter your email">
-                    <input type="number" required placeholder="Enter your cnp">
-                    <input type="submit">
+                <form class="sign-in" method="post" >
+                    <input type="text" name="FirstName" disabled="disabled" id="firstName" placeholder="First" required
+                        placeholder="Enter your first name">
+                    <input type="text" name="LastName" disabled="disabled" required placeholder="Enter your last name">
+                    <input type="email" name="email" required placeholder="Enter your email">
+                    <input type="number" name="cnp" disabled="disabled" required placeholder="Enter your cnp">
+                    <input type="password" name="pass" required placeholder="Enter your password" value="">
+                   <p class="error-password-need-to-be-bigger" style="display:none">password needs to be bigger than 6 characters</p>
+                    <input type="password" name="reppass" required placeholder="Enter your password" value="">
+                    <p class="error-password"></p>
+                    <input type="submit" name="submit">
                     <a class="user-has-an-account">already have an account</a>
-                    <div class="google-signin">
-                        <script src="https://accounts.google.com/gsi/client" async defer></script>
-                        <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
-                            data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
-                        </div>
-                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
-                            data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
-                        </div>
-                    </div>
                 </form>
-                <form class="log-in">
-                    <input type="email" required placeholder="Enter your email">
-                    <input type="password" required placeholder="Enter your password">
-                    <input type="submit">
-                    <div class="google-signin">
-                        <script src="https://accounts.google.com/gsi/client" async defer></script>
-                        <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID"
-                            data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
-                        </div>
-                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
-                            data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
-                        </div>
-                    </div>
+                <form class="log-in" method="post">
+                    <input type="email" name="email" required placeholder="Enter your email" value="">
+                    <input type="password" name="pass" required placeholder="Enter your password" value="">
+                    <input type="submit" name="submit">
                 </form>
             </div>
             <div class="column menu-">
@@ -65,7 +52,7 @@
                     <a>Settings</a>
                     <a>Help</a>
                     <a>Become a partner</a>
-                    <a>Log-out</a>
+                    <button class="btn-logout">Log-out</button>
                 </div>
             </div>
         </div>
@@ -113,5 +100,6 @@
 </body>
 
 <script src="js/main.js"></script>
+<script type="module" src="js/firebase.js"></script>
 
 </html>

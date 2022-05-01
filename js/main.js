@@ -3,8 +3,10 @@ let buttons = document.querySelector(".question-buttons");
 let text = document.querySelector(".h1-text");
 let container = document.querySelector(".index-container-header-none");
 let loginForm = document.querySelector(".log-in");
+let signinForm = document.querySelector(".sign-in");
 let menuline = document.querySelectorAll(".menu-line");
 let logInShow = document.querySelector(".log-in-show");
+let btnLogout = document.querySelector(".btn-logout");
 
 
 
@@ -57,3 +59,9 @@ let menu1 = document.querySelector(".menu-new");
 // logInShow.onclick = () => {
 //     container.style.display = "inherit";
 // }
+
+
+
+// the login form 
+console.log(loginForm.email.value);
+ console.log(signinForm.submit.value);
