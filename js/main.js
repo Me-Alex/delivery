@@ -7,9 +7,14 @@ let signinForm = document.querySelector(".sign-in");
 let menuline = document.querySelectorAll(".menu-line");
 let logInShow = document.querySelector(".log-in-show");
 let btnLogout = document.querySelector(".btn-logout");
-
-
-
+let restaurantList = document.querySelector(".restaurant-list");
+let restaurant = document.querySelector(".restaurant-result");
+let restaurantProduct = document.querySelector(".restaurant-products");
+let restaurantProductList = document.querySelector(".restaurant-products-list");
+if (restaurantList)
+    restaurantList.innerHTML = "";
+if (restaurantProductList)
+    restaurantProductList.innerHTML = "";
 
 
 
@@ -64,4 +69,4 @@ let menu1 = document.querySelector(".menu-new");
 
 // the login form 
 console.log(loginForm.email.value);
- console.log(signinForm.submit.value);
+console.log(signinForm.submit.value);

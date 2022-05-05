@@ -45,20 +45,37 @@
     gap: 20px;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     padding-top: 20px;
 
   }
+
   .column.restaurant-state {
-    border:none;
-    width:200px;
-    padding:20px;
+    border: none;
+    width: 200px;
+    /* padding: 20px; */
   }
+
   .row.type-of-food::-webkit-scrollbar {
     height: 2px;
   }
 
   .row.type-of-food::-webkit-scrollbar-thumb {
     width: 2px;
+  }
+
+
+  .actual-restaurant h3 {
+    font-size: inherit ;
+  }
+
+  .column.restaurant-list {
+    width: inherit;
+  }
+  .column.actual-restaurant{
+    padding:0;
+  }
+  .restaurant-result{
+    width:100%;
   }
 }
