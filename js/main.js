@@ -31,7 +31,7 @@ btn1.onclick = () => {
 let btn2 = document.querySelector("#button-no");
 btn2.onclick = () => {
     console.log("nu");
-    text.innerText = "Te doare la pula";
+    text.innerText = "Please ";
 }
 
 // let closeWindow = document.querySelector(".close-window");
